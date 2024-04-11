@@ -64,11 +64,25 @@
 
 }
 .bg_img{
-    background-image: url(../images/webp/hero.jpg);
+    background-image: url(../images/webp/Dashboard.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-}
-.navbar{
+    /* background-position: center; */
     
+}
+.navBar{
+    background-color: var(--black);
+    padding: 25px 27px 26px 29px;
+}
+.input-box{
+    border-radius: 8px;
+    background: #2A2A2A;
+    max-width: 288px;
+    padding: 14px 23px 14px 23px;
+}
+.outline-none{
+    outline: none;
+}
+.cursor-pointer{
+    cursor: pointer;
 }
