@@ -38,7 +38,11 @@
     --blue :#0042FF80;
     --red:#EB001B80;
     --white-70: #CEB8C3;
+    --white-40: #666666;
     
+}
+.color-white-40{
+    color: var(--white-40);
 }
 .color-white-70{
     color: var(--white-70);
