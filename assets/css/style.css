@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url(./root.css);
 
@@ -15,17 +15,64 @@
 .font-Quicksand{
     font-family: "Quicksand", sans-serif;
 }
+.font-Poppins{
+    font-family: "Poppins", sans-serif;
+
+}
 
 /* --------------------------------------------padding */
+.pt-12{
+    padding-top: 12px;
+}
+.pt-13{
+    padding-top: 13px;
+}
+.pt-18{
+    padding-top: 18px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-25{
+    padding-top: 25px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pb-24{
+    padding-bottom: 24px;
+}
+.pt-28{
+    padding-top: 28px;
+}
 .pt-40{
     padding-top: 40px;
+}
+.pr-10{
+    padding-right: 10px !important;
 }
 /* --------------------------------------------padding */
 /* --------------------------------------------gap */
 .gap-14{
     gap: 14px;
 }
+.gap-19{
+    gap: 19px;
+}
+.gap-44{
+    gap: 44px;
+}
 /* --------------------------------------------gap */
+/* --------------------------------------------margin */
+.mt-24{
+    margin-top: 24px;
+}
+/* --------------------------------------------margin */
+/* --------------------------------------------width */
+.max-w-782{
+    max-width: 782px;
+}
+/* --------------------------------------------width*/
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
@@ -34,12 +81,18 @@
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
+/* --------------------------------------------btn */
+.btn-1{
+    padding: 13px 22px 12px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+.btn-1:hover{
+    background: #FFFFFF !important;
+    color: #000000 !important;
+
+}
+/* --------------------------------------------btn */
 .duration-300{
     transition: all 300ms linear;
     
@@ -86,3 +139,22 @@
 .cursor-pointer{
     cursor: pointer;
 }
+.box{
+    border: 1px solid white;
+    background: linear-gradient(65.58deg, rgba(0, 66, 255, 0.5) -11.84%, rgba(235, 0, 27, 0.5) 98.75%);
+}
+
+.first-img{
+    transform: translate( -40px , 20px);
+}
+
+
+
+/* --------------------------------------------card */
+.mycard{
+    border: 1px solid white;
+    padding: 29px 25px 21px;
+    max-width: 242px;
+    
+}
+/* --------------------------------------------card */

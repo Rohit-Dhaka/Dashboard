@@ -37,7 +37,11 @@
     --gray:#A2A3A4;
     --blue :#0042FF80;
     --red:#EB001B80;
+    --white-70: #CEB8C3;
     
+}
+.color-white-70{
+    color: var(--white-70);
 }
 .color-gray{
     color: var(--gray);
