@@ -40,9 +40,35 @@
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
-
+.duration-300{
+    transition: all 300ms linear;
+    
+}
 .sidbar{
     max-width: 256px;
     background: var(--black);
     padding: 24px 12px 24px 24px;
+}
+.sidbar-tab{
+    padding: 13px 18px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+.sidbar-tab:hover h6{
+    font-weight: 600 !important;
+    color: white;
+}
+.sidbar-tab:hover{
+    background-image: linear-gradient(65.58deg, var(--blue) -11.84%, var(--red) 98.75%);    
+
+}
+.bg_img{
+    background-image: url(../images/webp/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    
 }

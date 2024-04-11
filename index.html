@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css">   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <section>
-        <div class="container">
-            <div class="sidbar">
+
+        <div class="d-flex min-vh-100 bg_img">
+            <div class="sidbar position-fixed h-100">
                 <div class="pe-2 py-1">
                     <img src="./assets/images/svg/logo.svg" alt="">
                 </div>
                 <div class="pt-40">
-                    <div class="d-flex gal-14 align-items-center">
+                    <div class="d-flex gap-14 align-items-center sidbar-tab duration-300">
                         <img src="./assets/images/svg/home.svg" alt="">
                         <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Dashboard</h6>
                     </div>
@@ -23,12 +27,20 @@
                 </div>
 
             </div>
+            <div class="w-100 min-vh-100 overflow-y-scroll">
+                <nav class="p-5  w-100 navbar"></nav>
+                <div class="min-vh-100"></div>
+            </div>
+
         </div>
 
 
 
-    </section>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
