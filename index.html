@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <section>
+    <section class="content">
 
         <div class="d-flex min-vh-100 bg-img ">
             <div class="sidbar position-fixed h-100 w-100">
@@ -98,12 +98,12 @@
                 </div>
 
             </div>
-            <div class=" min-vh-100 overflow-y-scroll pl-256 ">
+            <div class=" min-vh-100  pl-256 ">
                 <nav class="w-100 navBar d-flex justify-content-between">
                     <div class="input-box d-flex align-items-center justify-content-between w-100">
-                        <input type="text" placeholder="Search"
+                        <input type="text" id="searchInput"  placeholder="Search"
                             class="bg-transparent border-0 outline-none font-Quicksand fw-medium lh-16 fs-lg text-white">
-                        <div class="cursor-pointer">
+                        <div class="cursor-pointer"  onclick="highlightText()">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

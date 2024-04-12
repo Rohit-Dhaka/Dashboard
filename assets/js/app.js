@@ -1,7 +1,7 @@
 $('.card-slider').slick({    
     infinite: true,
     dots: true,
-    speed: 800,
+    speed: 200,
     prevArrow:".pre-btn",
     nextArrow:".next-btn",
     slidesToShow: 3,
@@ -43,3 +43,21 @@ $('.card-slider').slick({
       }
     ]
   });
+
+
+
+  function highlightText() {
+    const searchInput = document.getElementById('searchInput').value;        
+    const contentElement = document.querySelector('.content');   
+    if (searchInput !== '') {        
+    const highlightedContent = contentElement.innerHTML.replace(
+       new RegExp(searchInput, 'gi'),
+       '<span class="highlight">$&</span>',
+       contentElement.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" }) ,
+    );
+    contentElement.innerHTML = highlightedContent;                  
+   }         
+   else{
+       alert("enter some text")
+    }       
+ }
