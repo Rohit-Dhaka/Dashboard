@@ -33,6 +33,9 @@
 .pt-10{
     padding-top: 10px;
 }
+.pt-11{
+    padding-top: 11px;
+}
 .pt-12{
     padding-top: 12px;
 }
@@ -273,4 +276,7 @@
 .card-3{
     padding: 20px 13px 21px 12px;
     border-radius: 8px;
+}
+.bottom-border{
+    border-bottom: 0.8px solid #A2A3A4;
 }
