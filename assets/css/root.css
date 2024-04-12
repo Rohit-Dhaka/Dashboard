@@ -39,7 +39,19 @@
     --red:#EB001B80;
     --white-70: #CEB8C3;
     --white-40: #666666;
+    --white-smoke:#A9A9A9;
+    --green: #34D178;
+    --red:#FF0000;
     
+}
+.color-red{
+    color: var(--red);
+}
+.color-green{
+    color: var(--green);
+}
+.white-smoke{
+    color: var(--white-smoke);
 }
 .color-white-40{
     color: var(--white-40);

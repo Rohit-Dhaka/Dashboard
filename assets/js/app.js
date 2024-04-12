@@ -1,13 +1,16 @@
-$('.slider-two').slick({    
+$('.card-slider').slick({    
     infinite: true,
     dots: true,
     speed: 800,
-    slidesToShow: 1,
-    autoplay:true,
+    prevArrow:".pre-btn",
+    nextArrow:".next-btn",
+    slidesToShow: 3,
+    dots:false,
+    // autoplay:true,
     slidesToScroll: 1,
     cssEase: 'linear',  
-    centerMode: true,  
-    variableWidth: true,  
+    
+    // variableWidth: true,  
     responsive: [
       {
         breakpoint: 1024,
