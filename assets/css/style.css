@@ -46,6 +46,9 @@
     padding-top: 25px;
 
 } 
+.pl-27{
+    padding-left: 27px;
+}
 .pt-28{
     padding-top: 28px;
 
@@ -296,6 +299,7 @@
     border-radius: 8px;
     box-shadow: 6.96px 10.44px 43.52px 0px #00000066;
     max-width: 395px;
+    height: 402px;
 
 }
 .card-3{
@@ -316,17 +320,18 @@
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url('../images/svg/down.svg') !important;
-    transform: rotate(180deg) !important;
+    transform: rotate(0deg) !important;
 }
 
 .accordion-button::after {
-    flex-shrink: 0;
-    width: var(--bs-accordion-btn-icon-width);
-    height: var(--bs-accordion-btn-icon-width);
-    margin-left: auto;
-    content: "";
+    
+    
+    
+    
+    
     background-image:  url('../images/svg/down.svg') !important;
-    background-repeat: no-repeat;
-    background-size: var(--bs-accordion-btn-icon-width);
-    transition: var(--bs-accordion-btn-icon-transition);
+    
+    transform: rotate(180deg) !important;
+    
+    /* transition: var(--bs-accordion-btn-icon-transition); */
 }
