@@ -19,21 +19,82 @@
 <body>
     <section>
 
-        <div class="d-flex min-vh-100 bg_img">
-            <div class="sidbar position-fixed h-100 d-none">
+        <div class="d-flex min-vh-100 bg-img ">
+            <div class="sidbar position-fixed h-100 w-100">
                 <div class="pe-2 py-1">
                     <img src="./assets/images/svg/logo.svg" alt="">
                 </div>
-                <div class="pt-40">
+                <div class="pt-40 pb-16 bottom-border">
                     <div class="d-flex gap-14 align-items-center sidbar-tab duration-300">
                         <img src="./assets/images/svg/home.svg" alt="">
                         <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Dashboard</h6>
+                    </div>
+                    <div class="d-flex gap-14 align-items-center sidbar-tab duration-300">
+                        <img src="./assets/images/svg/Auctions.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Auctions</h6>
+                    </div>
+                    <div class="d-flex gap-14 align-items-center sidbar-tab duration-300">
+                        <img src="./assets/images/svg/inbox.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Inbox</h6>
+                    </div>
+                    <div class="d-flex gap-14 align-items-center sidbar-tab duration-300">
+                        <img src="./assets/images/svg/Favourites.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Favourites</h6>
+                    </div>
+
+                </div>
+                <div class="pt-28 pb-28 ps-3  bottom-border">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-transparent border-0"  >
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-transparent p-0 max-w-204" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <div class="d-flex gap-13 align-items-center">
+                                  <img src="./assets/images/svg/wallets.svg" alt="">
+                                  <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">WALLETS</h6>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body pt-24 px-0 pb-0">
+                                <div class="d-flex gap-23 align-items-center">
+                                    <img src="./assets/images/svg/bitcoin.svg" alt="">
+                                    <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">BitCoin</h6>
+                                </div>
+                                <div class="d-flex gap-23 align-items-center pt-24">
+                                    <img src="./assets/images/svg/Ethereum.svg" alt="">
+                                    <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Ethereum</h6>
+                                </div>
+                                <div class="d-flex gap-23 align-items-center pt-24">
+                                    <img src="./assets/images/svg/USD.svg" alt="">
+                                    <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">USD Coin</h6>
+                                </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+                        
+                       
+                      </div>
+
+                </div>
+                <div class="pt-28 pb-28 ps-3">
+                    <div class="d-flex gap-13 align-items-center">
+                        <img src="./assets/images/svg/setting.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Settings</h6>                        
+                    </div>
+                    <div class="d-flex gap-13 align-items-center pt-24">
+                        <img src="./assets/images/svg/help.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Help & FAQ</h6>                        
+                    </div>
+                    <div class="d-flex gap-13 align-items-center pt-24">
+                        <img src="./assets/images/svg/dark.svg" alt="">
+                        <h6 class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl">Dark mode</h6>                        
                     </div>
 
                 </div>
 
             </div>
-            <div class="w-100 min-vh-100 overflow-y-scroll">
+            <div class=" min-vh-100 overflow-y-scroll pl-256 ">
                 <nav class="w-100 navBar d-flex justify-content-between">
                     <div class="input-box d-flex align-items-center justify-content-between w-100">
                         <input type="text" placeholder="Search"
@@ -76,13 +137,16 @@
                 </nav>
                 <div class="container">
                     <div class="row pt-20 pb-21">
-                        <div class="col-7 ">
-                            <div class="max- w-782">
+                        <div class="col-8 ">
+                            <div class="max-w-782 ">
                                 <h2 class="m-0 font-saira fw-semibold  lh-37 fs-8xl text-white">Top Auction</h2>
                                 <div class=" box mt-24 max-w-782 position-relative">
                                     <div class="row">
                                         <div class="col-6 ">
-                                            <img src="./assets/images/webp/Group5082.png" alt="" class="w-100 first-img">
+                                            <div class="first-img">
+                                                <img src="./assets/images/webp/Group5082.png" alt="" class="w-100 ">
+
+                                            </div>
                                         </div>
                                         <div class="col-6 pt-12 z-1">
                                             <div class="pr-10">
@@ -319,14 +383,35 @@
                             </div>
 
                         </div>
-                        <div class="col-5 ">
+                        <div class="col-4">
                             <h2 class="font-Saira lh-37 fs-8xl fw-semibold text-white m-0">My Wallet</h2>
-                            <div class="card-2 position-relative mt-24 bg-black border-gradient">
-                                <div class="d-flex flex-column align-items-center">
+                            <div class="card-2 position-relative mt-24 bg-black border-gradient ">
+                                <div class="d-flex flex-column align-items-center ">
                                     <h5 class="font-Quicksand fw-medium lh-20 fs-3xl m-0 white-smoke">Your Balance</h5>
                                     <h5 class="text-white  font-Saira lh-56 fs-10xl fw-semibold m-0 pt-10"><span class="fs-3xl " >ETH</span> 21.533.10</h5>                                  
                                 </div>
-                                <div class="pt-25 pb-35">
+                                <div class="pt-25 pb-35 z-2 max-w-258 mx-auto">
+                                   
+                                    <!-- <div class="accordion " id="accordionExample">
+                                        <div class="accordion-item bg-transparent border-0">
+                                          <h2 class="accordion-header " id="headingOne">
+                                            <button class="accordion-button bg-transparent p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              <div class="d-flex  align-items-center gap-3">
+                                                <img src="./assets/images/svg/Ethereumcard.svg" alt="">
+                                                <h6 class="m-0 font-Inter fw-normal lh-18 fs-2xl color-gray">Ethereum<span class="text-white"> ETH</span></h6>
+                                              </div>
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet.
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                       
+                                        
+                                      </div> -->
 
                                 </div>
                                 <div class="d-flex justify-content-between">

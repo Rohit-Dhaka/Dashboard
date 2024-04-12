@@ -36,6 +36,9 @@
 .pt-11{
     padding-top: 11px;
 }
+.pb-16{
+    padding-bottom: 16px;
+}
 .pt-12{
     padding-top: 12px;
 }
@@ -43,6 +46,14 @@
     padding-top: 25px;
 
 } 
+.pt-28{
+    padding-top: 28px;
+
+} 
+.pb-28{
+    padding-bottom: 28px;
+
+}
 .pb-35{
     padding-bottom: 35px;
 
@@ -55,6 +66,9 @@
 }
 .pt-20{
     padding-top: 20px;
+}
+.pt-24{
+    padding-top: 24px !important;
 }
 .pt-25{
     padding-top: 25px;
@@ -86,16 +100,25 @@
 .pt-117{
     padding-top: 117px;
 }
+.pl-256{
+    padding-left: 256px;
+}
 /* --------------------------------------------padding */
 /* --------------------------------------------gap */
 .gap-7{
     gap: 7px;
+}
+.gap-13{
+    gap: 13px;
 }
 .gap-14{
     gap: 14px;
 }
 .gap-19{
     gap: 19px;
+}
+.gap-23{
+    gap: 23px;
 }
 .gap-44{
     gap: 44px;
@@ -110,11 +133,14 @@
 }
 /* --------------------------------------------margin */
 /* --------------------------------------------width */
+.max-w-204{
+    max-width: 204px;
+}
 .max-w-258{
     max-width: 258px !important;
 }
 .max-w-782{
-    max-width: 782px;
+    max-width: 782px !important;
 }
 /* --------------------------------------------width*/
 /* -------------------------------------------- */
@@ -156,15 +182,14 @@
     cursor: pointer;
     
 }
-.sidbar-tab:hover h6{
-    font-weight: 600 !important;
+.sidbar-tab:hover h6{    
     color: white;
 }
 .sidbar-tab:hover{
     background-image: linear-gradient(65.58deg, var(--blue) -11.84%, var(--red) 98.75%);    
 
 }
-.bg_img{
+.bg-img{
     background-image: url(../images/webp/Dashboard.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,7 +215,7 @@
 .box{
     border-radius: 8px; 
     
-
+    padding: 0 10px 19px 0;
 
     background: linear-gradient(65.58deg, rgba(0, 66, 255, 0.5) -11.84%, rgba(235, 0, 27, 0.5) 98.75%);
 }
@@ -276,7 +301,32 @@
 .card-3{
     padding: 20px 13px 21px 12px;
     border-radius: 8px;
+    max-width: 397px;
 }
 .bottom-border{
     border-bottom: 0.8px solid #A2A3A4;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #999999 !important;    
+    box-shadow: none !important;
+}
+.accordion-button:focus {        
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../images/svg/down.svg') !important;
+    transform: rotate(180deg) !important;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image:  url('../images/svg/down.svg') !important;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
 }
