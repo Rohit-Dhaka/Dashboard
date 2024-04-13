@@ -17,7 +17,7 @@ $('.card-slider').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -86,16 +86,24 @@ var x = setInterval(function() {
 // ----------------------------
 const navmenu = document.querySelector(".navmenu");
 const sidbar = document.querySelector(".sidbar");
+
+
 navmenu.addEventListener("click" , ()=>{
   sidbar.classList.toggle("active")
+  navmenu.classList.toggle("active")
 })
 
 
 // --------------------------
-var element = document.body;
-function darkmode(){  
-  element.classList.toggle("darkmode");
-}
+// var element = document.body;
+// function darkmode(){  
+//   element.classList.toggle("darkmode");
+// }
+
+
+document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
+  document.querySelector('html').toggleAttribute('data-dark-mode')
+})  
 
 
 

@@ -34,7 +34,7 @@
 
 
     --black: #131313;
-    
+    --bg-dark:black;
     --gray:#A2A3A4;
     --white:#ffffff;
     --blue :#0042FF80;
@@ -44,29 +44,44 @@
     --white-smoke:#A9A9A9;
     --green: #34D178;
     --red:#FF0000;
+
+    --black-100:#2A2A2A;
+/*  */
+    --blue-100:#292AB8;
+    --blue-200:#6E6BFF;
+    --blue-300:#6A69C2;
+    --black-300:#00000066;
+    --red-100: #822946;
+    --gray-100:#8A7B80D9;
+    --gray-200:#54555650;
+    --gray-300:#999999;
+    --gray-400:#ccc;
+    
+    
     
 }
 
+[data-dark-mode]{
 
-
-/* 
-:root .darkmode{
+    --black: green;
+    --bg-dark:yellow;
+    --gray:red;
+    --white:red;
+    --blue :red;
+    --red:red;
+    --white-70: red;
+    --white-40: red;
+    --white-smoke:red;
+    --green: red;
+    --red:red;
     
 
+    --black-100:red;
 
-        
-    --black: white;
-    --gray:white;
-    --blue :white;
-    --red:white;
-    --white-70: white;
-    --white-40: white;
-    --white-smoke:white;
-    --green: white;
-    --red:white;
-
-    
-} */
+}
+.Bg-black{
+    background: var(--bg-dark);
+}
 .color-red{
     color: var(--red);
 }
@@ -81,6 +96,9 @@
 }
 .color-white-70{
     color: var(--white-70);
+}
+.color-white{
+    color: var(--white);
 }
 .color-gray{
     color: var(--gray);

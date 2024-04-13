@@ -19,8 +19,8 @@
 <body>
     <section class="bg-img ">        
         <div class=" position-relative">
-            <div class="sidbar position-fixed min-vh-100 w-100 duration-300 bg-black">
-                <div class="pe-2 py-1">
+            <div class="sidbar position-fixed min-vh-100 w-100 duration-300 ">
+                <div class="pe-2 py-1 d-sm-block d-none">
                     <img src="./assets/images/svg/logo.svg" alt="logo">
                 </div>
                 <div class="pt-40 pb-16 bottom-border">
@@ -101,24 +101,28 @@
                         <h6
                             class="font-Quicksand mb-0 color-gray fw-normal lh-20 fs-3xl pe-3 d-lg-block d-sm-none d-block">
                             Dark mode</h6>
-                        <label class="switch d-lg-block d-sm-none d-block" onclick="darkmode()">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
+                         <!-- <div id="dark-mode-toggle" class="z-1" >
+                            
+                             <label class="switch d-lg-block d-sm-none d-block" >
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>  
+                         </div>  -->
+                        <button id="dark-mode-toggle">hello</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class=" min-vh-100  pl-lg-256  pl-sm-100 overflow-y-scroll">
             <nav class="w-10 0 navBar d-flex justify-content-between align-items-center">
-                <div class="navmenu d-sm-none d-block z-2">
-                    <span class="bar d-block bg-white"></span>
-                    <span class="bar d-block bg-white my-2"></span>
-                    <span class="bar d-block bg-white"></span>
+                <div class="navmenu d-sm-none d-block z-4">
+                    <span class="bar bar1 duration-300 d-block bg-white"></span>
+                    <span class="bar bar2 duration-300 d-block bg-white my-2"></span>
+                    <span class="bar bar3 duration-300 d-block bg-white"></span>
                 </div>
                 <div class="input-box d-flex align-items-center justify-content-between w-100">
                     <input type="text" id="searchInput" placeholder="Search"
-                        class="bg-transparent border-0 outline-none font-Quicksand fw-medium lh-16 fs-lg text-white">
+                        class="bg-transparent border-0 outline-none font-Quicksand fw-medium lh-16 fs-lg color-white">
                     <div class="cursor-pointer" onclick="highlightText()">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -127,15 +131,15 @@
                         </svg>
                     </div>
                 </div>
-                <div class="d-flex gap-5 align-items-center">
-                    <div class="cursor-pointer" data-toggle="tooltip" data-placement="bottom" title="message">
+                <div class="d-flex gap-sm-5 gap-3 align-items-center">
+                    <div class="cursor-pointer d-sm-block d-none" data-toggle="tooltip" data-placement="bottom" title="message">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22.3047 18.5053C22.9088 17.4048 23.2314 16.1721 23.244 14.9167C23.2566 13.6614 22.9588 12.4224 22.377 11.31C21.7951 10.1976 20.9474 9.24624 19.9091 8.54055C18.8709 7.83485 17.6743 7.3967 16.4258 7.26509C16.0296 6.31056 15.4432 5.44665 14.7025 4.72595C13.9617 4.00524 13.082 3.44283 12.117 3.07293C11.1519 2.70303 10.1217 2.5334 9.08898 2.57434C8.05628 2.61528 7.04272 2.86595 6.10998 3.31109C5.17725 3.75623 4.34485 4.38653 3.66347 5.16361C2.98208 5.9407 2.46597 6.84832 2.14653 7.83123C1.82709 8.81413 1.71102 9.85176 1.80537 10.881C1.89972 11.9102 2.20253 12.9094 2.69537 13.8178L2.07037 16.0151C2.01403 16.2155 2.01208 16.4272 2.06472 16.6286C2.11735 16.83 2.22268 17.0137 2.36986 17.1609C2.51704 17.3081 2.70077 17.4134 2.90215 17.4661C3.10353 17.5187 3.3153 17.5167 3.51568 17.4604L5.71295 16.8354C6.59703 17.3232 7.57001 17.6287 8.57427 17.7338C8.98109 18.7265 9.59298 19.622 10.3699 20.3617C11.1468 21.1014 12.0712 21.6687 13.0825 22.0264C14.0939 22.3841 15.1694 22.5242 16.2386 22.4374C17.3079 22.3507 18.3467 22.039 19.2872 21.5229L21.4844 22.1479C21.6851 22.2076 21.8983 22.212 22.1012 22.1606C22.3042 22.1092 22.4896 22.0039 22.6376 21.8558C22.7857 21.7077 22.891 21.5224 22.9424 21.3194C22.9939 21.1164 22.9895 20.9033 22.9297 20.7026L22.3047 18.5053ZM5.79107 15.6147C5.7344 15.6141 5.67811 15.6241 5.62505 15.644L3.19341 16.3374L3.88677 13.9057C3.91115 13.8296 3.91853 13.749 3.90841 13.6697C3.89829 13.5904 3.8709 13.5143 3.82818 13.4467C3.02906 12.0981 2.74965 10.5042 3.0424 8.96419C3.33515 7.42417 4.17993 6.04396 5.41816 5.08264C6.6564 4.12133 8.20293 3.64501 9.76745 3.74311C11.332 3.8412 12.8069 4.50697 13.9153 5.61542C15.0238 6.72388 15.6896 8.1988 15.7877 9.76332C15.8858 11.3278 15.4094 12.8744 14.4481 14.1126C13.4868 15.3508 12.1066 16.1956 10.5666 16.4884C9.02657 16.7811 7.43265 16.5017 6.08404 15.7026C5.99696 15.6455 5.89518 15.615 5.79107 15.6147ZM21.1133 18.5932L21.8067 21.0249L19.3751 20.3315C19.2989 20.3071 19.2184 20.2997 19.1391 20.3099C19.0598 20.32 18.9836 20.3474 18.9161 20.3901C18.1561 20.8395 17.3121 21.1282 16.4361 21.2385C15.5602 21.3487 14.6709 21.278 13.8233 21.0309C12.9758 20.7838 12.1879 20.3654 11.5084 19.8017C10.829 19.2379 10.2724 18.5408 9.8731 17.7534C11.8016 17.6247 13.6093 16.7687 14.9308 15.3583C16.2523 13.9479 16.9891 12.0885 16.9922 10.1557C16.99 9.6005 16.9278 9.04716 16.8067 8.50532C17.8261 8.6968 18.7844 9.13112 19.6004 9.7715C20.4163 10.4119 21.066 11.2395 21.4942 12.1842C21.9225 13.1289 22.1168 14.1629 22.0607 15.1986C22.0046 16.2344 21.6998 17.2413 21.1719 18.1342C21.1292 18.2018 21.1018 18.2779 21.0917 18.3572C21.0816 18.4365 21.089 18.5171 21.1133 18.5932Z"
                                 fill="white" fill-opacity="0.75" />
                         </svg>
                     </div>
-                    <div data-toggle="tooltip" data-placement="bottom" title="Notification" class="cursor-pointer">
+                    <div data-toggle="tooltip" data-placement="bottom" title="Notification" class="cursor-pointer d-sm-block d-none">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.5 22.9163C13.1451 22.9172 13.7744 22.717 14.3005 22.3436C14.8266 21.9702 15.2233 21.4422 15.4354 20.833H9.56458C9.77673 21.4422 10.1734 21.9702 10.6995 22.3436C11.2256 22.717 11.8549 22.9172 12.5 22.9163ZM19.7917 15.1934V10.4163C19.7917 7.0653 17.5156 4.24238 14.4323 3.39342C14.1271 2.62467 13.3813 2.08301 12.5 2.08301C11.6188 2.08301 10.8729 2.62467 10.5677 3.39342C7.48438 4.24342 5.20833 7.0653 5.20833 10.4163V15.1934L3.43021 16.9715C3.33329 17.0681 3.25643 17.1829 3.20405 17.3093C3.15167 17.4357 3.1248 17.5712 3.125 17.708V18.7497C3.125 19.0259 3.23475 19.2909 3.4301 19.4862C3.62545 19.6816 3.8904 19.7913 4.16667 19.7913H20.8333C21.1096 19.7913 21.3746 19.6816 21.5699 19.4862C21.7653 19.2909 21.875 19.0259 21.875 18.7497V17.708C21.8752 17.5712 21.8483 17.4357 21.796 17.3093C21.7436 17.1829 21.6667 17.0681 21.5698 16.9715L19.7917 15.1934Z"
@@ -152,19 +156,19 @@
                 <div class="row pt-20 pb-21 pl-xl-27">
                     <div class="col-xl-8 col-12 ">
                         <div class="max-w-xl-782 ">
-                            <h2 class="m-0 font-saira fw-semibold  lh-37 fs-8xl text-white">Top Auction</h2>
+                            <h2 class="m-0 font-saira fw-semibold  lh-37 fs-8xl color-white">Top Auction</h2>
                             <div class=" box mt-24  position-relative">
                                 <div class="row">
-                                    <div class="col-sm-6 col-12 z-2">
+                                    <div class="col-md-6 col-12 z-2">
                                         <div class="first-img w-100">
                                             <img src="./assets/images/webp/Group5082.png" alt="Group5082"
                                                 class="w-100 ">
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-12 pt-12 z-2 ">
+                                    <div class="col-md-6 col-12 pt-12 z-2 ">
                                         <div class="pr-10">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h2 class="font-saira m-0 fw-semibold lh-50 fs-9xl text-white">Magic
+                                                <h2 class="font-saira m-0 fw-semibold lh-50 fs-9xl color-white">Magic
                                                     Bullets
                                                 </h2>
                                                 <div class="cursor-pointer">
@@ -187,13 +191,13 @@
                                             <div class="d-flex gap-19 align-items-center pt-3">
                                                 <img src="./assets/images/svg/dp.svg" alt="dp">
                                                 <div class="d-flex flex-column">
-                                                    <h4 class="fw-semibold lh-21 font-Poppins fs-xl text-white m-0"> Debbie Reese</h4>
+                                                    <h4 class="fw-semibold lh-21 font-Poppins fs-xl color-white m-0"> Debbie Reese</h4>
                                                     <h5 class="font-Quicksand  fw-normal lh-15 fs-md color-white-70 m-0 pt-1"> @Debbie111</h5>
                                                 </div>
                                             </div>
                                             <div class="pt-28 d-flex gap-44">
                                                 <div class="d-flex flex-column">
-                                                    <h5 class="m-0 fw-normal font-Quicksand lh-15 text-white fs-md ps-2">
+                                                    <h5 class="m-0 fw-normal font-Quicksand lh-15 color-white fs-md ps-2">
                                                         Price per NFT</h5>
                                                     <div class="d-flex gap-2 align-items-center pt-13">
                                                         <svg width="23" height="23" viewBox="0 0 24 24" fill="none"
@@ -225,40 +229,40 @@
                                                                 </clipPath>
                                                             </defs>
                                                         </svg>
-                                                        <h5 class="font-Saira fw-semibold lh-31 fs-6xl text-white m-0">
+                                                        <h5 class="font-Saira fw-semibold lh-31 fs-6xl color-white m-0">
                                                             80
                                                             PLAYR</h5>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex flex-column">
-                                                    <h5 class="m-0 fw-normal font-Quicksand lh-15 text-white fs-md ">
+                                                    <h5 class="m-0 fw-normal font-Quicksand lh-15 color-white fs-md ">
                                                         Starts
                                                         in</h5>
                                                     <div class="d-flex gap-2 align-items-center pt-13">
                                                         <span id="demo"
-                                                            class="font-Saira fw-semibold lh-31 fs-6xl text-white m-0">
+                                                            class="font-Saira fw-semibold lh-31 fs-6xl color-white m-0">
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="pt-2xl-117 pt-xl-80 d-flex gap-3">
+                                            <div class="pt-2xl-117 pt-xl-80 pt-60 d-flex gap-3">
                                                 <button
-                                                    class="btn-1 text-white font-Saira lh-25 fs-3xl fw-semibold bg-transparent duration-300">View
+                                                    class="btn-1 color-white font-Saira lh-25 fs-3xl fw-semibold bg-transparent duration-300">View
                                                     Rewards</button>
                                                 <button
-                                                    class="btn-1 text-white font-Saira lh-25 fs-3xl fw-semibold bg-transparent duration-300">View
+                                                    class="btn-1 color-white font-Saira lh-25 fs-3xl fw-semibold bg-transparent duration-300">View
                                                     Rewards</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="pt-35 pb-24 d-flex justify-content-between">
-                                <h5 class="mb-0 font-Saira lh-34 fs-7xl fw-semibold text-white">Featured NFTs</h5>
+                            <div class="pt-35 pb-24 d-flex justify-content-between flex-wrap">
+                                <h5 class="mb-0 font-Saira lh-34 fs-7xl fw-semibold color-white">Featured NFTs</h5>
                                 <div class="d-flex  gap-12 align-items-center">
                                     <div class="dropdown">
                                         <button onclick="myFunction()" class="d-flex gap-28 dropbtn border-0 align-items-center" >
-                                            <span class=" font-Saira lh-20 fs-lg fw-bold text-white ">Popular</span>
+                                            <span class=" font-Saira lh-20 fs-lg fw-bold color-white ">Popular</span>
                                             <img src="./assets/images/svg/Populararrow.svg" alt="">
                                         </button>
                                         <div id="myDropdown" class="dropdown-content">
@@ -292,10 +296,10 @@
                             </div>
                             <div class="">
                                 <div class="card-slider px-0 mx-0 w-100">
-                                    <div class="mycard bg-black position-relative border-gradient  z-2">
+                                    <div class="mycard Bg-black position-relative border-gradient  z-2">
                                         <img src="./assets/images/webp/card1.png" alt="card1" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
-                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold text-white">Ready
+                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Ready
                                                 Players
                                             </h5>
                                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
@@ -319,13 +323,13 @@
                                                 ETH</h6>
                                         </div>
                                         <button
-                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 text-white py-2 w-100 z-2">Place
+                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100 z-2">Place
                                             a bid a</button>
                                     </div>
-                                    <div class="mycard bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient">
                                         <img src="./assets/images/webp/card2.png" alt="card2" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
-                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold text-white">Dragon’s
+                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Dragon’s
                                                 Den
                                             </h5>
                                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
@@ -349,13 +353,13 @@
                                                 ETH</h6>
                                         </div>
                                         <button
-                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 text-white py-2 w-100">Place
+                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100">Place
                                             a bid</button>
                                     </div>
-                                    <div class="mycard bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient">
                                         <img src="./assets/images/webp/card3.png" alt="card3" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
-                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold text-white">Crippled
+                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Crippled
                                                 World</h5>
                                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -378,13 +382,13 @@
                                                 ETH</h6>
                                         </div>
                                         <button
-                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 text-white py-2 w-100">Place
+                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100">Place
                                             a bid</button>
                                     </div>
-                                    <div class="mycard bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient">
                                         <img src="./assets/images/webp/card1.png" alt="card1" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
-                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold text-white">Ready
+                                            <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Ready
                                                 Players
                                             </h5>
                                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
@@ -408,20 +412,20 @@
                                                 ETH</h6>
                                         </div>
                                         <button
-                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 text-white py-2 w-100">Place
+                                            class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100">Place
                                             a bid</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-12 d-sm-flex flex-xl-column  gap-24 gap-xl-0 pt-5 pt-xl-0 ">
-                        <div class="d-flex flex-column ">
-                            <h2 class="font-Saira lh-37 fs-8xl fw-semibold text-white m-0">My Wallet</h2>
-                            <div class="card-2 position-relative mt-24 bg-black border-gradient ">
+                    <div class="col-xl-4 col-12 d-sm-flex flex-xl-column  flex-md-nowrap flex-wrap gap-24 gap-xl-0 pt-5 pt-xl-0 ">
+                        <div class="d-flex flex-column w-100">
+                            <h2 class="font-Saira lh-37 fs-8xl fw-semibold color-white m-0">My Wallet</h2>
+                            <div class="card-2 position-relative mt-24 Bg-black border-gradient ">
                                 <div class="d-flex flex-column align-items-center ">
                                     <h5 class="font-Quicksand fw-medium lh-20 fs-3xl m-0 white-smoke">Your Balance</h5>
-                                    <h5 class="text-white  font-Saira lh-56 fs-10xl fw-semibold m-0 pt-10"><span
+                                    <h5 class="color-white  font-Saira lh-56 fs-10xl fw-semibold m-0 pt-10"><span
                                             class="fs-3xl ">ETH</span> 21.533.10</h5>
                                 </div>
                                 <div class="pt-25 pb-35 z-2 max-w-258 mx-auto">
@@ -429,7 +433,7 @@
                                         <button onclick="seconddrowp()" class="d-flex gap-89 dropbtn2 bg-transparent border-0 align-items-center" >
                                             <span class="d-flex align-items-center gap-3 ">
                                                 <img src="./assets/images/svg/Ethereumcard.svg" alt="">
-                                                <span class="font-Inter fw-normal lh-18 fs-2xl color-gray text-nowrap ">Ethereum <span class="text-white">ETH</span></span>
+                                                <span class="font-Inter fw-normal lh-18 fs-2xl color-gray text-nowrap ">Ethereum <span class="color-white">ETH</span></span>
                                             </span> 
                                             <img src="./assets/images/svg/down.svg" alt="">
                                         </button>
@@ -448,7 +452,7 @@
                                             </h5>
                                         </div>
                                         <h5 class="font-Oxanium fw-bold lh-40 fs-9xl text-center pt-6 color-green">7.048
-                                            <span class="text-white fs-md">ETH</span>
+                                            <span class="color-white fs-md">ETH</span>
                                         </h5>
                                         <div class="pt-3 pb-30">
                                             <img src="./assets/images/svg/greenline.svg" alt="greenline" class="w-100">
@@ -461,7 +465,7 @@
                                             </h5>
                                         </div>
                                         <h5 class="font-Oxanium fw-bold lh-40 fs-9xl text-center pt-6 color-red">2.013
-                                            <span class="text-white fs-md">ETH</span>
+                                            <span class="color-white fs-md">ETH</span>
                                         </h5>
                                         <div class="pt-3 pb-30">
                                             <img src="./assets/images/svg/redline.svg" alt="redline" class="w-100">
@@ -470,69 +474,69 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column w-100">
-                            <h2 class="font-Saira lh-37 fs-8xl fw-semibold text-white m-0 pt-xl-39">Recent Transactions
+                        <div class="d-flex flex-column w-100 pt-4 pt-md-0">
+                            <h2 class="font-Saira lh-37 fs-8xl fw-semibold color-white m-0 pt-xl-39 text-nowrap">Recent Transactions
                             </h2>
-                            <div class="card-3 border-gradient position-relative mt-24 bg-black w-100">
+                            <div class="card-3 border-gradient position-relative mt-24 Bg-black w-100 ">
                                 <div class="d-flex justify-content-between align-items-center bottom-border">
                                     <div class="d-flex gap-2 align-items-center pb-3 ">
                                         <img src="./assets/images/svg/icon1.svg" alt="icon1">
                                         <div class="d-flex flex-column">
-                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl text-white">0,15 BTC
+                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl color-white">0,15 BTC
                                             </h5>
                                             <h6 class="m-0 font-Inter fw-normal lh-11 fs-sm color-gray pt-1">$16.533.10
                                             </h6>
                                         </div>
                                     </div>
-                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold text-white">- $60</h6>
+                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold color-white">- $60</h6>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center bottom-border pt-11">
                                     <div class="d-flex gap-2 align-items-center pb-3 ">
                                         <img src="./assets/images/svg/icon2.svg" alt="icon2">
                                         <div class="d-flex flex-column">
-                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl text-white">0,33 BTC
+                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl color-white">0,33 BTC
                                             </h5>
                                             <h6 class="m-0 font-Inter fw-normal lh-11 fs-sm color-gray pt-1">$21.533.10
                                             </h6>
                                         </div>
                                     </div>
-                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold text-white">-$1260</h6>
+                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold color-white">-$1260</h6>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center bottom-border pt-11">
                                     <div class="d-flex gap-2 align-items-center pb-3 ">
                                         <img src="./assets/images/svg/icon3.svg" alt="icon3">
                                         <div class="d-flex flex-column">
-                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl text-white">0,55 BTC
+                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl color-white">0,55 BTC
                                             </h5>
                                             <h6 class="m-0 font-Inter fw-normal lh-11 fs-sm color-gray pt-1">$21.533.10
                                             </h6>
                                         </div>
                                     </div>
-                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold text-white">-$2360</h6>
+                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold color-white">-$2360</h6>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center bottom-border pt-11">
                                     <div class="d-flex gap-2 align-items-center pb-3 ">
                                         <img src="./assets/images/svg/icon1.svg" alt="icon1">
                                         <div class="d-flex flex-column">
-                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl text-white">0,01 BTC
+                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl color-white">0,01 BTC
                                             </h5>
                                             <h6 class="m-0 font-Inter fw-normal lh-11 fs-sm color-gray pt-1">$21.533.10
                                             </h6>
                                         </div>
                                     </div>
-                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold text-white">-$630</h6>
+                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold color-white">-$630</h6>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center  pt-11">
                                     <div class="d-flex gap-2 align-items-center ">
                                         <img src="./assets/images/svg/icon3.svg" alt="icon3">
                                         <div class="d-flex flex-column">
-                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl text-white">0,55 BTC
+                                            <h5 class="m-0 font-Quicksand fw-semibold lh-20 fs-3xl color-white">0,55 BTC
                                             </h5>
                                             <h6 class="m-0 font-Inter fw-normal lh-11 fs-sm color-gray pt-1">$21.533.10
                                             </h6>
                                         </div>
                                     </div>
-                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold text-white">-$2360</h6>
+                                    <h6 class="m-0 font-Quicksand lh-20 fs-3xl fw-semibold color-white">-$2360</h6>
                                 </div>
                             </div>
                         </div>
@@ -592,4 +596,3 @@ window.onclick = function (event) {
 </body>
 
 </html>
-544
