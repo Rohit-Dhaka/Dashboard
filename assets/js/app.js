@@ -51,7 +51,7 @@ $('.card-slider').slick({
     }       
  }
 //  -------------------------------countDownDate
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+var countDownDate = new Date("Jan 10, 2030 15:37:25").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();  
   var distance = countDownDate - now;  
@@ -73,6 +73,10 @@ navmenu.addEventListener("click" , ()=>{
   navmenu.classList.toggle("active")
 })
 // ---------------------------------dark-mode
+
+
+
+
 document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
   document.querySelector('html').toggleAttribute('data-dark-mode')  
 })  
