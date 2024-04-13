@@ -34,9 +34,7 @@ $('.card-slider').slick({
       }
     ]
   });
-
-
-
+// ----------------------------search-text
   function highlightText() {
     const searchInput = document.getElementById('searchInput').value;        
     const contentElement = document.querySelector('.content');   
@@ -52,58 +50,65 @@ $('.card-slider').slick({
        alert("enter some text")
     }       
  }
-
-
- // Set the date we're counting down to
+//  -------------------------------countDownDate
 var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
-
-// Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  
+  var now = new Date().getTime();  
+  var distance = countDownDate - now;  
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);      
   document.getElementById("demo").innerHTML =  hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
+  + minutes + "m " + seconds + "s ";      
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
-
-// ----------------------------
+// ----------------------------sidbar
 const navmenu = document.querySelector(".navmenu");
 const sidbar = document.querySelector(".sidbar");
-
-
 navmenu.addEventListener("click" , ()=>{
   sidbar.classList.toggle("active")
   navmenu.classList.toggle("active")
 })
-
-
-// --------------------------
-// var element = document.body;
-// function darkmode(){  
-//   element.classList.toggle("darkmode");
-// }
-
-
+// ---------------------------------dark-mode
 document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
   document.querySelector('html').toggleAttribute('data-dark-mode')  
 })  
+// -------------------------
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
 
+
+
+function seconddrowp() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+};
 
 

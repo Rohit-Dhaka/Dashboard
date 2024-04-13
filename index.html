@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">    
     <link rel="shortcut icon" href="./assets/images/svg/logo.svg" type="image/x-icon">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
@@ -18,7 +15,6 @@
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
 <body>
     <section class="bg-img ">        
         <div class=" position-relative">
@@ -266,7 +262,7 @@
                                     <div class="dropdown">
                                         <button onclick="myFunction()" class="d-flex gap-28 dropbtn border-0 align-items-center" >
                                             <span class=" font-Saira lh-20 fs-lg fw-bold color-white ">Popular</span>
-                                            <img src="./assets/images/svg/Populararrow.svg" alt="">
+                                            <img src="./assets/images/svg/Populararrow.svg" alt="Populararrow">
                                         </button>
                                         <div id="myDropdown" class="dropdown-content">
                                             <a href="#home" class=" ">Home</a>
@@ -329,7 +325,7 @@
                                             class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100 z-2">Place
                                             a bid a</button>
                                     </div>
-                                    <div class="mycard Bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient z-1">
                                         <img src="./assets/images/webp/card2.png" alt="card2" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
                                             <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Dragon’s
@@ -359,7 +355,7 @@
                                             class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100">Place
                                             a bid</button>
                                     </div>
-                                    <div class="mycard Bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient z-1">
                                         <img src="./assets/images/webp/card3.png" alt="card3" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
                                             <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Crippled
@@ -388,7 +384,7 @@
                                             class="btn-2 font-Saira fw-medium lh-25 fs-3xl border-0  mt-21 color-white py-2 w-100">Place
                                             a bid</button>
                                     </div>
-                                    <div class="mycard Bg-black position-relative border-gradient">
+                                    <div class="mycard Bg-black position-relative border-gradient z-1">
                                         <img src="./assets/images/webp/card1.png" alt="card1" class="w-100">
                                         <div class="pt-18 d-flex justify-content-between align-items-center">
                                             <h5 class="m-0 font-Saira lh-28 fs-5xl fw-semibold color-white">Ready
@@ -435,10 +431,10 @@
                                     <div class="dropdown2">
                                         <button onclick="seconddrowp()" class="d-flex gap-89 dropbtn2 bg-transparent border-0 align-items-center" >
                                             <span class="d-flex align-items-center gap-3 ">
-                                                <img src="./assets/images/svg/Ethereumcard.svg" alt="">
+                                                <img src="./assets/images/svg/Ethereumcard.svg" alt="Ethereumcard">
                                                 <span class="font-Inter fw-normal lh-18 fs-2xl color-gray text-nowrap ">Ethereum <span class="color-white">ETH</span></span>
                                             </span> 
-                                            <img src="./assets/images/svg/down.svg" alt="">
+                                            <img src="./assets/images/svg/down.svg" alt="down">
                                         </button>
                                         <div id="myDropdown2" class="dropdown-content2">
                                             <a href="#home" class=" ">Home</a>
@@ -547,7 +543,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -560,42 +555,6 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/app.js"></script>
     <script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
-
-
-
-function seconddrowp() {
-  document.getElementById("myDropdown2").classList.toggle("show2");
-}
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn2')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content2");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show2')) {
-        openDropdown.classList.remove('show2');
-      }
-    }
-  }
-};
-
-
     </script>
 </body>
-
 </html>
