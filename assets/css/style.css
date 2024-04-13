@@ -2,6 +2,7 @@
 
 @import url(./root.css);
 
+
 *{
     padding: 0;
     margin: 0;
@@ -30,6 +31,7 @@
 .pt-6{
     padding-top: 6px;
 }
+
 .pt-10{
     padding-top: 10px;
 }
@@ -46,9 +48,7 @@
     padding-top: 25px;
 
 } 
-.pl-27{
-    padding-left: 27px;
-}
+
 .pt-28{
     padding-top: 28px;
 
@@ -79,9 +79,7 @@
 .pt-35 {
     padding-top: 35px;
 }
-.pt-39{
-    padding-top: 39px;
-}
+
 .pb-24{
     padding-bottom: 24px;
 }
@@ -100,16 +98,15 @@
 .pr-10{
     padding-right: 10px !important;
 }
-.pt-117{
-    padding-top: 117px;
-}
-.pl-256{
-    padding-left: 256px;
-}
+
+
 /* --------------------------------------------padding */
 /* --------------------------------------------gap */
 .gap-7{
     gap: 7px;
+}
+.gap-12{
+    gap: 12px;
 }
 .gap-13{
     gap: 13px;
@@ -123,8 +120,17 @@
 .gap-23{
     gap: 23px;
 }
+.gap-24{
+    gap: 24px;
+}
+.gap-28{
+    gap: 28px;
+}
 .gap-44{
     gap: 44px;
+}
+.gap-89{
+    gap: 89px;
 }
 /* --------------------------------------------gap */
 /* --------------------------------------------margin */
@@ -142,8 +148,8 @@
 .max-w-258{
     max-width: 258px !important;
 }
-.max-w-782{
-    max-width: 782px !important;
+.max-w-1210{
+    /* max-width: 1210px !important; */
 }
 /* --------------------------------------------width*/
 /* -------------------------------------------- */
@@ -152,17 +158,88 @@
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
+/* --------------------------------------------dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    /* background-color: transparent; */
+    width: 100%;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 8px;
+    color: white;
+    transition: all 200ms linear;
+    text-decoration: none;
+    display: block;    
+}
+.dropdown-content a:hover {
+    
+    color: black;
+    background: white;        
+}
+.show{
+    display: block;
+}
+.dropbtn{
+    background: #54555650 !important;
+    padding: 7px  16px 7px 23px;
+    border-radius: 8px;
+
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background: black;
+    /* background-color: transparent; */
+    width: 100%;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    padding: 8px;
+    color: white;
+    transition: all 200ms linear;
+    text-decoration: none;
+    display: block;    
+}
+.dropdown-content2 a:hover {
+    
+    color: black;
+    background: white;        
+}
+.show2{
+    display: block;
+}
+/* --------------------------------------------dropdown */
 /* --------------------------------------------btn */
 .btn-1{
     padding: 13px 22px 12px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--white);
     border-radius: 8px;
 }
 .btn-1:hover{
-    background: #FFFFFF !important;
-    color: #000000 !important;    
+    background: var(--white) !important;
+    color: var(--black) !important;    
 }
 .btn-2{
     border-radius: 8px;
@@ -174,8 +251,12 @@
     transition: all 300ms linear;
     
 }
+.sidbar.active{
+    left: 0;
+}
 .sidbar{
-    max-width: 256px;
+    left: 0;
+    /* max-width: 100px; */
     background: var(--black);
     padding: 24px 12px 24px 24px;
 }
@@ -186,7 +267,7 @@
     
 }
 .sidbar-tab:hover h6{    
-    color: white;
+    color: var(--white);
 }
 .sidbar-tab:hover{
     background-image: linear-gradient(65.58deg, var(--blue) -11.84%, var(--red) 98.75%);    
@@ -194,9 +275,9 @@
 }
 .bg-img{
     background-image: url(../images/webp/Dashboard.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+    background-repeat: no-repeat;    
+    background-size: 100% 100% ;
+    background-position: center;
     
 }
 .navBar{
@@ -237,12 +318,7 @@
             
   }
 
-.first-img{
-    position: absolute;
-    transform: translate( -40px , 20px);
-    max-width: 438.16px;
-    height: 397.58px;
-}
+
 
 .slick-slide {
     margin: 0 13px;
@@ -256,10 +332,10 @@
     width: 36px;
     height: 36px;
     border-radius: 12px;
-    border: 1px solid #545556;
+    border: 1px solid #54555650;
 }
 .slider-btn:hover{
-    background: #545556 !important;
+    background: #54555650 !important;
 }
 .slider-btn svg path{
     transition: all 300ms linear;
@@ -282,6 +358,7 @@
 .border-gradient::before {
     content: "";
     position: absolute;
+    z-index: 0 !important;
     inset: 0;
     border-radius: 8px; 
     padding: 1.7px; 
@@ -298,14 +375,14 @@
     padding: 16px 16px 12px;
     border-radius: 8px;
     box-shadow: 6.96px 10.44px 43.52px 0px #00000066;
-    max-width: 395px;
-    height: 402px;
+    
 
 }
 .card-3{
     padding: 20px 13px 21px 12px;
     border-radius: 8px;
-    max-width: 397px;
+    /* max-width: 397px !important; */
+    height: 383px !important;
 }
 .bottom-border{
     border-bottom: 0.8px solid #A2A3A4;
@@ -318,15 +395,7 @@
 .accordion-button:focus {        
     box-shadow: none !important;
 }
-.accordion-button:not(.collapsed)::after {
-    background-image: url('../images/svg/down.svg') !important;
-    transform: rotate(0deg) !important;
-}
 
-.accordion-button::after {                    
-    background-image:  url('../images/svg/down.svg') !important;    
-    transform: rotate(180deg) !important;        
-}
 
 
 /* ---------------------------toggle-btn */
@@ -397,3 +466,95 @@
  }
 
 /* ---------------------------search-bar */
+
+
+
+/* ----------------------------navbar */
+.bar{
+    width: 30px;
+    height: 3px;
+    
+    
+}
+/* ----------------------------navbar */
+
+
+@media (max-width:575px) {
+    .sidbar{
+        left: -100%;
+        width: 100%;
+        
+    }
+     
+}
+
+@media (min-width:575px) {
+    .pl-sm-100{
+        padding-left: 100px !important;
+    }
+    .sidbar{
+        
+        max-width: 100px;
+        
+        
+    }
+    
+    
+}
+@media (min-width:768px) {
+    
+}
+
+@media (min-width:992px) {
+    .sidbar{
+        
+        max-width: 256px !important;
+        
+        
+    }
+    .pl-lg-256{
+        padding-left: 256px !important;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('../images/svg/down.svg') !important;
+        transform: rotate(0deg) !important;
+    }
+    
+    .accordion-button::after {                    
+        background-image:  url('../images/svg/down.svg') !important;    
+        transform: rotate(180deg) !important;        
+    }
+    
+}
+@media (min-width:1200px) {
+    .pt-xl-80{
+        padding-top: 80px !important;
+    }
+    .pt-xl-39{
+        padding-top: 39px !important;
+    }
+    .max-w-xl-782{
+        max-width: 782px !important;
+    }
+    .pl-xl-27{
+        padding-left: 27px !important;
+    }
+    .card-2{
+    height: 409px !important;
+                        
+        /* max-width: 395px !important;             */
+    }
+    
+}
+@media (min-width:1400px) {
+    .first-img{
+        position: absolute;
+        transform: translate( -40px , 20px);
+        max-width: 438.16px;
+        height: 397.58px;
+    }
+    .pt-2xl-117{
+        padding-top: 117px !important;
+    }
+    
+}

@@ -34,7 +34,9 @@
 
 
     --black: #131313;
+    
     --gray:#A2A3A4;
+    --white:#ffffff;
     --blue :#0042FF80;
     --red:#EB001B80;
     --white-70: #CEB8C3;
@@ -44,6 +46,27 @@
     --red:#FF0000;
     
 }
+
+
+
+/* 
+:root .darkmode{
+    
+
+
+        
+    --black: white;
+    --gray:white;
+    --blue :white;
+    --red:white;
+    --white-70: white;
+    --white-40: white;
+    --white-smoke:white;
+    --green: white;
+    --red:white;
+
+    
+} */
 .color-red{
     color: var(--red);
 }
