@@ -102,7 +102,7 @@ navmenu.addEventListener("click" , ()=>{
 
 
 document.querySelector('#dark-mode-toggle').addEventListener('click', function() {
-  document.querySelector('html').toggleAttribute('data-dark-mode')
+  document.querySelector('html').toggleAttribute('data-dark-mode')  
 })  
 
 

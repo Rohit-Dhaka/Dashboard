@@ -56,31 +56,49 @@
     --gray-200:#54555650;
     --gray-300:#999999;
     --gray-400:#ccc;
+    --yellow:yellow;
+    --red-100:red;
     
     
     
 }
 
+
 [data-dark-mode]{
 
-    --black: green;
-    --bg-dark:yellow;
-    --gray:red;
-    --white:red;
-    --blue :red;
-    --red:red;
-    --white-70: red;
-    --white-40: red;
-    --white-smoke:red;
-    --green: red;
-    --red:red;
+    --black: rgba(197, 190, 190, 0.282);
+    --bg-dark:rgb(251, 249, 249);
+    --gray:black;
+    --white:black;
+    --blue :rgb(255, 255, 255);
+    --red: red;
+    --white-70: black;
+    --white-40: black;
+    --white-smoke: black;
+    --green:  green;
+    --red: rgb(189, 188, 188);
     
 
-    --black-100:red;
+    --black-100:white;
+
+
+    --blue-100: white;
+    --blue-200:blue;
+    --blue-300: gray;
+    --black-300: white;
+    --red-100: rgb(76, 76, 76);
+    --gray-100: rgb(48, 48, 48);
+    --gray-200: rgb(245, 241, 241);
+    --gray-300: white;
+    --gray-400:white;
+    
 
 }
 .Bg-black{
     background: var(--bg-dark);
+}
+.text-red{
+    color: var(--red);
 }
 .color-red{
     color: var(--red);

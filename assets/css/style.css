@@ -329,6 +329,7 @@
 
 }
 
+
 .bg-img {
     background-image: url(../images/webp/Dashboard.png);
     background-repeat: no-repeat;
@@ -450,6 +451,7 @@
 .card-3 {
     padding: 20px 13px 21px 12px;
     border-radius: 8px;
+    box-shadow: 6.96px 10.44px 43.52px 0px var(--black-300);
     /* max-width: 397px !important; */
     /* height: 383px !important; */
 }
@@ -534,7 +536,7 @@ input:checked+.slider:before {
 /* ---------------------------toggle-btn */
 /* ---------------------------search-bar */
 .highlight {
-    background-color: yellow !important;
+    background-color: var(--yellow) !important;
 }
 
 /* ---------------------------search-bar */
